@@ -62,3 +62,146 @@ input {
     border: none;
     outline: none;
 }
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+                url('../img/sidebar-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+nav a:hover {
+    background: rgba(255,255,255,0.1);
+    padding-left: 30px;
+}
+
+#products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card-producto {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card-producto:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.producto-img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.producto-img img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.producto-img:hover img {
+    transform: scale(1.1);
+}
+
+button {
+    background: #6f4e37;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a3e2b;
+    transform: scale(1.05);
+}
+
+.item-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.controles {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eliminar {
+    background: red;
+}
+
+.total {
+    font-weight: bold;
+    text-align: right;
+}
+
+footer {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                url('../img/footer-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    margin-left: 220px;
+}
+
+
