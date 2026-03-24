@@ -1,22 +1,22 @@
 [
     { 
         "nombre": "Café Americano", 
-        "precio": 3000,
+        "precio": 7000,
         "descripcion": "Café negro clásico, intenso y aromático"
     },
     { 
         "nombre": "Café Latte", 
-        "precio": 4000,
+        "precio": 7000,
         "descripcion": "Suave mezcla de café con leche cremosa"
     },
     { 
         "nombre": "Capuccino", 
-        "precio": 4500,
+        "precio": 8000,
         "descripcion": "Espuma perfecta con toque de canela"
     },
     { 
-        "nombre": "Café Mocha", 
-        "precio": 5000,
+        "nombre": "Café Mocca", 
+        "precio": 10000,
         "descripcion": "Café con chocolate, dulce y delicioso"
     }
 ]
