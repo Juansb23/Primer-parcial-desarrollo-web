@@ -29,7 +29,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 
         } else {
             mensaje.textContent = "❌Usuario o contraseña incorrectos❌";
-            mensaje.style.color = "#ff4d4d";
+            mensaje.style.color = "#fff";
         }
     }, 800);
 });
