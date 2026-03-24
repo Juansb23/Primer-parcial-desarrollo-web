@@ -1,16 +1,35 @@
-const USER="admin";
-const PASSWORD="1234";
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-document.getElementById("loginForm").addEventListener("submit",function(e){
-  e.preventDefault();
+    const user = document.getElementById("user").value.trim();
+    const pass = document.getElementById("pass").value.trim();
+    const mensaje = document.getElementById("mensaje");
 
-  const user=document.getElementById("user").value;
-  const pass=document.getElementById("pass").value;
+    mensaje.textContent = "";
 
-  if(user===USER && pass===PASSWORD){
-    localStorage.setItem("login","true");
-    window.location.href="index.html";
-  }else{
-    document.getElementById("error-msg").textContent="Error en credenciales";
-  }
+    if (user === "" || pass === "") {
+        mensaje.textContent = "¡¡¡Todos los campos son obligatorios!!!";
+        mensaje.style.color = "#ffcc00";
+        return;
+    }
+
+    mensaje.textContent = "Verificando...⏳";
+    mensaje.style.color = "white";
+
+    setTimeout(() => {
+        if (user === "admin" && pass === "1234") {
+            mensaje.textContent = "Bienvenido ✅";
+            mensaje.style.color = "#00ff99";
+
+            localStorage.setItem("login", "true");
+
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 800);
+
+        } else {
+            mensaje.textContent = "❌Usuario o contraseña incorrectos❌";
+            mensaje.style.color = "#ff4d4d";
+        }
+    }, 800);
 });
