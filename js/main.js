@@ -23,6 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+document.addEventListener("click", function(e) {
+
+    if (e.target.id === "btn-comprar") {
+
+        if (carrito.length === 0) {
+            alert("🛒 El carrito está vacío");
+            return;
+        }
+        alert("Gracias por tu compra en Coffe Time☕");  
+
+        carrito = [];
+        guardar();
+        mostrar();
+        }
+    });
+
     fetch("data/productos.json")
     .then(res => res.json())
     .then(productos => {

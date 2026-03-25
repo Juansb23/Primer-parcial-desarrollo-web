@@ -69,6 +69,7 @@ header {
     background-size: cover;
     background-position: center;
 
+    font-family:'Courier New', Courier, monospace;
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -94,6 +95,7 @@ nav {
     background-size: cover;
     background-position: center;
 
+    font-family: 'Courier New', Courier, monospace;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -176,6 +178,31 @@ button:hover {
     box-shadow: 0 3px 10px #0000001a;
 }
 
+
+#btn-comprar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    padding: 15px 20px;
+    background: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 50px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+
+    z-index: 1000;
+}
+
+#btn-comprar:hover {
+    background: #218838;
+    transform: scale(1.1);
+}
 .controles {
     display: flex;
     align-items: center;
@@ -192,8 +219,8 @@ button:hover {
 }
 
 footer {
-    background: linear-gradient(#000000e6, #000000e6),
-                url('../img/footer-bg.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('../img/footer-bg.jpg');
 
     background-size: cover;
     background-position: center;
