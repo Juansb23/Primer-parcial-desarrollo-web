@@ -17,7 +17,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     mensaje.style.color = "white";
 
     setTimeout(() => {
-        if (user === "admin" && pass === "1234") {
+        if (user === "Coffe" && pass === "2026") {
             mensaje.textContent = "Bienvenido ✅";
             mensaje.style.color = "#00ff99";
 
